@@ -1,0 +1,59 @@
+html, body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  position: absolute;
+}
+
+.index {
+  z-index: 100;
+  position: absolute;
+  .hidden {
+    display: none;
+  }
+  input{
+    width: 350px;
+  }
+  #popup{
+    width: 180px;
+    z-index: 40;
+    position: absolute;
+    line-height: 32px;
+    .select{
+      width: 180px;
+      text-align: center;
+      white-space: nowrap;
+      u{
+        font-size: 10px;
+        cursor: pointer;
+        vertical-align: center;
+      }
+    }
+
+    td {
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+      &:hover{
+        background: #f3f3f3; 
+      }
+    }
+
+    th {
+      line-height: 20px;
+      font-size: 10px;
+      color: #696969;
+      text-transform: uppercase;
+      background: #f3f3f3;
+    }
+  }
+}
